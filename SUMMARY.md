@@ -1,6 +1,6 @@
 # 目录
 
-- git 基础介绍
+- [git 基础介绍](./chapter1/README.md)
     - [git 工作目录](./chapter1/git%20工作目录介绍.md)
     - git SHA1 介绍
 - git 命令介绍
