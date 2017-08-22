@@ -2,7 +2,7 @@
 ---------------
 - [git 相关概念介绍](./ch1-basic/README.md)
     - [git 基本概念介绍](./ch1-basic/git基本概念介绍.md)
-    - [git SHA1 介绍](./ch1-basic/git%20SHA1介绍.md)
+    - [git SHA1 介绍](./ch1-basic/git SHA1介绍.md)
     - [git 特殊符号引用介绍](./ch1-basic/git特殊符号引用介绍.md)
     - [git Tree-ish 介绍](./ch1-basic/git%20Tree-ish介绍.md)  
 
