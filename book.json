@@ -1,0 +1,14 @@
+{
+  "title": "git 系列教程",
+  "author": "liaozhicheng",
+  "description": "记录 git 学习过程中的一些重要知识",
+  "language": "zh-hans",
+  "plugins": [
+    "disqus@^0.1.0"
+  ],
+  "pluginsConfig": {
+    "disqus": {
+      "shortName": "评论"
+    }
+  }
+}
