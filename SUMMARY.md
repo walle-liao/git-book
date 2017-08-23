@@ -2,9 +2,9 @@
 ---------------
 - [git 相关概念介绍](./ch1-basic/README.md)
     - [git 基本概念介绍](./ch1-basic/git基本概念介绍.md)
-    - [git SHA1 介绍](./ch1-basic/git SHA1介绍.md)
+    - [git SHA1 介绍](./ch1-basic/git-SHA1介绍.md)
     - [git 特殊符号引用介绍](./ch1-basic/git特殊符号引用介绍.md)
-    - [git Tree-ish 介绍](./ch1-basic/git%20Tree-ish介绍.md)  
+    - [git Tree-ish 介绍](./ch1-basic/git-Tree-ish介绍.md)  
 
 
 - [git 命令相关](./ch2-command/README.md)
@@ -12,10 +12,10 @@
     - git log 命令相关
     - git reset/revert 重置
     - git branch 分支
-    - [git diff 差异比较](./ch2-command/git%20diff差异比较.md)
+    - [git diff 差异比较](./ch2-command/git-diff差异比较.md)
     - git merge 合并
     - git commit 提交
-    - [git stash 临时暂存](./ch2-command/git%20stash临时暂存.md)
+    - [git stash 临时暂存](./ch2-command/git-stash临时暂存.md)
     - [git 远程分支](./ch2-command/git远程分支.md)
 
 
