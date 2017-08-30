@@ -10,10 +10,9 @@
 - [git 命令相关](./ch2-command/README.md)
     - [git 常用基本命令](./ch2-command/git常用基本命令.md)
     - git log 命令相关
-    - git reset/revert 重置
-    - git branch 分支
+    - [git 变更提交历史 reset/revert/rebase](./ch2-command/git变更提交历史-reset-revert-rebase.md)
+    - [git 分支相关 branch/merge/rebase](./ch2-command/git分支相关-branch-merge-rebase.md) 
     - [git diff 差异比较](./ch2-command/git-diff差异比较.md)
-    - git merge 合并
     - git commit 提交
     - [git stash 临时暂存](./ch2-command/git-stash临时暂存.md)
     - [git 远程分支](./ch2-command/git远程分支.md)
