@@ -9,7 +9,7 @@
 发现多了一个远程分支，然后将本地分支和远程分支进行关联  
 `$ git branch --set-upstream-to examples-spring origin/examples-spring`  
 ![将本地分支和远程分支关联](./images/0002.png)
-
+> 也可以直接使用 `git push -u origin examples-spring` 命令来替代上面两个命令，-u 参数相当于 --set-upstream-to
 
 ### 将远程分支拉取到本地分支
 远程有个 origin/examples-git 分支，现需要将该远程分支拉倒本地 examples-git 分支
