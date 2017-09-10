@@ -54,7 +54,7 @@ $ git log --oneline -2
 f5cab36 (HEAD -> client) c9 commit other
 7361d87 c8 commit
 ```
-`git reset --soft HEAD~1` 重置 HEAD 修改文件还在暂存区，直接使用 `git commit` 命令提交修改，可以修改提交的信息
+`git reset --soft HEAD~1` 重置 HEAD 被修改文件内容还在暂存区，直接使用 `git commit` 命令提交修改，可以修改提交的信息
 
 ### git clean
 
