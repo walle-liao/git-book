@@ -14,3 +14,19 @@ git 命令后面的参数常见的形式 -v / --status
 ### git add
 - `git add .`  ## . 表示添加所有的改变  
 - `git add -A`  ## 等同于 --all，也等同于 . 的效果，也是添加所有的改动
+
+
+# git log
+- `git log --oneline --abbrev`
+
+
+# git rev-list
+`git rev-list --oneline master -- readme.txt` 查看 readme.txt 文件在 master 分支上所有的提交历史
+
+`git revert SHA1` 撤销某个提交历史
+
+`git cherry-pick SHA1` 将某个提交应用到当前分支
+
+
+`git diff SHA1 SHA2 > patch` 将某两个点之间的差异生成补丁文件  
+`git apply patch` 将补丁文件应用到
