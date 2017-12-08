@@ -35,7 +35,7 @@
 [difftool]
 	prompt = false
 
-# mergeftool 配置
+# mergetool 配置
 [merge]
 	tool = bc4
 [mergetool "bc4"]

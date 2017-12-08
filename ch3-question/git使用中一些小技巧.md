@@ -10,6 +10,7 @@ $ git ls-tree -r -l HEAD |grep .java | wc -l
 154
 ```
 使用命令 `git ls-tree -r` -r 参数表示递归整个目录树，该命令会列出整个 HEAD 仓库中所有的文件列表，然后结合 linux 的相关统计命令就可以统计出总的文件数量了。  
+另外也可以使用 `git ls-files` 命令
 
 
 **找到某个文件名所在的全路径**  

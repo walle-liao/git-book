@@ -18,6 +18,7 @@ git 命令后面的参数常见的形式 -v / --status
 
 # git log
 - `git log --oneline --abbrev`
+- `git log -5 --format="%h %an %s %ad" --date="format:%s" --no-merges`
 
 
 # git rev-list
