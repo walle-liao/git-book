@@ -40,27 +40,27 @@ E: HEAD~1^2~1
 
 
 ### 提交&更新
-`git add .`  # 将所有的变更添加到索引，等同于 `git add -A` 或者 `git add --all`，如果只想添加某个指定的文件可以使用 `git add -- filename`  
-`git rm --cached -- filename`  # 从索引中删除某个文件，但不会从工作目录删除  
+`git add .`  <span style="color:#969696"># 将所有的变更添加到索引，等同于 `git add -A` 或者 `git add --all`，如果只想添加某个指定的文件可以使用 `git add -- filename`  </span>
+`git rm --cached -- filename`  <span style="color:#969696"># 从索引中删除某个文件，但不会从工作目录删除  </span>
 
-`git commit -m "message"`  # 将索引中的变更提交到本地仓库  
-`git commit -a -m "message"`  # 将 `git add .` 与 `git commit -m "message"` 这两个命令合成一个命令提交  
-`git commit --amend`  # 修改最后一次提交的 message（只能修改最后一次的提交）  
-`git rebase -i`  # 与交互的方式合并提交/更改提交的顺序等  
-`git merge test`  # 将 test 分支合并到当前分支  
+`git commit -m "message"`  <span style="color:#969696"># 将索引中的变更提交到本地仓库  </span>
+`git commit -a -m "message"`  <span style="color:#969696"># 将 `git add .` 与 `git commit -m "message"` 这两个命令合成一个命令提交  </span>
+`git commit --amend`  <span style="color:#969696"># 修改最后一次提交的 message（只能修改最后一次的提交）  </span>
+`git rebase -i`  <span style="color:#969696"># 与交互的方式合并提交/更改提交的顺序等  </span>
+`git merge test`  <span style="color:#969696"># 将 test 分支合并到当前分支  </span>
 
-`git status`  # 查看当前工作目录下的变更内容  
-`git status -s`  # 查看变更文件和变更状态，那些标识为<span style="color:red">UU</span>的文件就是需要解决的冲突文件  
-`git status -vv`  # 查看变更的详细内容  
+`git status`  <span style="color:#969696"># 查看当前工作目录下的变更内容  </span>
+`git status -s`  <span style="color:#969696"># 查看变更文件和变更状态，那些标识为<span style="color:red">UU</span>的文件就是需要解决的冲突文件  </span>
+`git status -vv`  <span style="color:#969696"># 查看变更的详细内容  </span>
 
-`git pull`  # 拉取远程分支的更新，并且将远程分支的更新合并到本地分支  
-`git pull --rebase`  # 拉取远程分支的更新，并使用 rebase 的方式将远程分支的更新应用到本地分支，相对于 `git pull` 操作，这种方式不会产生一个远程分支合并点，该操作等下于下面两个命令的合并*（推荐采用这种方式来拉取远程分支的更新，这样整个分支的提交历史记录会赶紧很多）*   
-`git fetch`  # 拉取远程仓库的更新，但不进行合并  
-`git rebase origin/master master`  # 将远程 master 分支上的更新 rebase 到本地 master 分支上  
-`git push origin master`  # 将本地提交记录推送到远程仓库  
-`git push origin :test`  # 删除远程仓库的 test 分支，冒号前面的是本地分支名，冒号后面的是远程分支名，这里冒号前面的为空，表示将本地的一个空分支推送到远程的 test 分支，意思就是删掉远程的 test 分支  
+`git pull`  <span style="color:#969696"># 拉取远程分支的更新，并且将远程分支的更新合并到本地分支  </span>
+`git pull --rebase`  <span style="color:#969696"># 拉取远程分支的更新，并使用 rebase 的方式将远程分支的更新应用到本地分支，相对于 `git pull` 操作，这种方式不会产生一个远程分支合并点，该操作等下于下面两个命令的合并*（推荐采用这种方式来拉取远程分支的更新，这样整个分支的提交历史记录会赶紧很多）*   </span>
+`git fetch`  <span style="color:#969696"># 拉取远程仓库的更新，但不进行合并  </span>
+`git rebase origin/master master`  <span style="color:#969696"># 将远程 master 分支上的更新 rebase 到本地 master 分支上  </span>
+`git push origin master`  <span style="color:#969696"># 将本地提交记录推送到远程仓库  </span>
+`git push origin :test`  <span style="color:#969696"># 删除远程仓库的 test 分支，冒号前面的是本地分支名，冒号后面的是远程分支名，这里冒号前面的为空，表示将本地的一个空分支推送到远程的 test 分支，意思就是删掉远程的 test 分支  </span>
 
-`git cherry-pick SHA1`  # 将某个提交应用到其他分支，会产生一个新的提交  
+`git cherry-pick SHA1`  <span style="color:#969696"># 将某个提交应用到其他分支，会产生一个新的提交  </span>
 
 
 #### 重置
