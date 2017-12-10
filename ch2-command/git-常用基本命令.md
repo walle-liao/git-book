@@ -50,7 +50,7 @@ E: HEAD~1^2~1
 `git merge test`  <span style="color:#969696"># 将 test 分支合并到当前分支  </span>  
 
 `git status`  <span style="color:#969696"># 查看当前工作目录下的变更内容  </span>  
-`git status -s`  <span style="color:#969696"># 查看变更文件和变更状态，那些标识为<span style="color:red">UU</span>的文件就是需要解决的冲突文件  </span>  
+`git status -s`  <span style="color:#969696"># 查看变更文件和变更状态，那些标识为`UU`的文件就是需要解决的冲突文件  </span>  
 `git status -vv`  <span style="color:#969696"># 查看变更的详细内容  </span>  
 
 `git pull`  <span style="color:#969696"># 拉取远程分支的更新，并且将远程分支的更新合并到本地分支  </span>  
