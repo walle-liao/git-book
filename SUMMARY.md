@@ -8,7 +8,7 @@
 
 
 - [git 命令相关](./ch2-command/README.md)
-    - [git 常用基本命令](./ch2-command/git常用基本命令.md)
+    - [git 常用基本命令](./ch2-command/git-常用基本命令.md)
     - git log 命令相关
     - [git 变更提交历史 reset/revert/rebase](./ch2-command/git变更提交历史-reset-revert-rebase.md)
     - [git 分支相关 branch/merge/rebase](./ch2-command/git分支相关-branch-merge-rebase.md)
