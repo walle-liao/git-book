@@ -20,6 +20,7 @@
 
 - [git 常见问题及技巧](./ch3-question/README.md)
     - [git 常见问题总结-配置相关](./ch3-question/git常见问题总结-配置相关.md)
+    - [git 第一大坑-关于不同平台换行符问题](./ch3-question/git-第一大坑-关于不同平台换行符问题.md)
     - [git 使用中一些小技巧](./ch3-question/git使用中一些小技巧.md)
 
 - [github 相关](./ch4-github/README.md)
