@@ -135,6 +135,9 @@ E: HEAD~1^2~1
 `git tag <tagname>` <span style="color:#969696"># 基于当前分支 HEAD 创建标签  </span>  
 `git tag -d <tagname>` <span style="color:#969696"># 删除标签  </span>  
 
+`git remote show origin`  # 查看远程分支
+`git remote prune origin`  # 修剪本地分支，删除本地那些在远程仓库已经删除的远程分支（删除本地的 origin/xxx 分支），等效的一条命令是 `git fetch -p`，fetch 之后删除掉没有与远程分支对应的本地分支
+
 
 #### 其他
 `git reflog` <span style="color:#969696"># *让你永远有后悔药吃* 列出所有 HEAD 变更还原点，当前分支 HEAD 发生变化时（新的提交/撤销提交/切换分支等），git 都会自动记录一个还原点，你可以使用这个还原点来恢复你的错误操作，例如：当你使用 `git reset HADE^` 还原了某个提交点后，你又发现那个被重置的提交点是有用的，你又想恢复回来，这时你就可以使用 reflog 还原点来还原  </span>  
