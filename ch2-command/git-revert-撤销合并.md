@@ -5,7 +5,7 @@ Git 的 revert 命令可以用来撤销提交（commit），对于常规的提�
 ### Merge Commit
 在描述 merge commit 之前，先来简短地描述一下常规的 commit。每当你做了一批操作（增加、修改、或删除）之后，你执行 `git commit` 便会得到一个常规的 Commit。执行 `git show <commit>` 将会输出详细的增删情况。
 
-Merge commit 则不是这样。每当你使用 git merge 合并两个分支，你将会得到一个新的 merge commit。执行 git show <commit> 之后，会有类似的输出：
+Merge commit 则不是这样。每当你使用 git merge 合并两\个分支，你将会得到一个新的 merge commit。执行 git show <commit> 之后，会有类似的输出：
 ```
 commit 19b7d40d2ebefb4236a8ab630f89e4afca6e9dbe
 Merge: b0ef24a cca45f9
