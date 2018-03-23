@@ -33,6 +33,7 @@ E: HEAD~1^2~1
 ### 创建版本库
 `git init`  <span style="color:#969696"># 本地初始化 git 仓库</span>  
 `git clone <url>`  <span style="color:#969696"># 克隆远程版本库</span>  
+`git clone -b test http://tradetest:tradetest@git.qfang.com/erp/trade.git qfang-note`  <span style="color:#969696"># "-b / --branch test" 意思是 checkout 出 test 分支，"tradetest:tradetest" 这一段是指定 clone 代码的用户名和密码，"qfang-note" 是指 checkout 到本地 qfang-note 目录下 </span>  
 
 `git config --list`  <span style="color:#969696"># 查看本地所有配置项  </span>  
 `git config core.autocrlf`  <span style="color:#969696"># 查看某个配置的详细配置值  </span>  
