@@ -32,7 +32,7 @@ A -> B -> C -> D -> E -> P -> Q
 将本地分支和远程分支进行关联  
 `$ git branch --set-upstream-to examples-spring origin/examples-spring`  
 > 也可以直接使用 `git push -u origin examples-spring` 命令来替代上面两个命令，-u 参数相当于 --set-upstream-to  
-> 也可以先 checkout 到本地分支，然后使用 `git branch --set-upstream origin/examples-spring` 直接搞定
+> 也可以先 checkout 到本地分支，然后使用 `$ git branch --set-upstream-to=origin/examples-spring` 直接搞定
 
 
 ### 将远程分支拉取到本地分支
