@@ -31,7 +31,7 @@ E: HEAD~1^2~1
 
 
 ### 创建版本库
-`git init`  # 本地初始化 git 仓库  
+`git init`  <span class="grey"># 本地初始化 git 仓库</span>  
 `git clone <url>`  # 克隆远程版本库  
 
 `git config --list`  # 查看本地所有配置项    
@@ -102,10 +102,11 @@ E: HEAD~1^2~1
 `git log --oneline --after='2017-09-05'` # --after='2017-09-05'显示从2017-09-05号之后的所有提交，类似的查看某个日期之前的提交可以使用 --before=''    
 `git log --oneline --grep='oracle'` # --grep='oracle' 查看 commit message 中包含 oracle 字符串的所有提交（更加提交 message 快速找到某个历史的提交点）    
 `git log -S "readme"` # -S 基于提交内容的搜索，搜索哪次提交内容中包含了 readme 字符（可以用来快速查找文件中的某一行或者某段内容是在哪个提交中添加进来的）    
-`git log --format="%h %an %s %ad" --date=short -5 --no-merges` # --format参数 %h：显示 SHA 值，%an：显示提交作者，%s：显示提交的 message，%ad：显示提交的日期；--date=shore 用来格式化日期的显示形式（2017-12-09）这种格式    
+`git log --format="%h %an %s %ad" --date=short -5 --no-merges` # --format参数 %h：显示 SHA 值，%an：显示提交作者，%s：显示提交的 message，%ad：显示提交的日期；--date=shore 用来格式化日期的显示形式（2017-12-09）这种格式   
+
 `git rev-list --oneline master -- README.md` # 查看 README.md 文件在 master 分支上所有的提交历史    
-`git bisect` # 一个基于二分查找的方式来定位修改提交点（自行研究使用方法...）    
 `git blame -- README.md` # 查看指定文件每行的作者，可以指定需要查看哪些行的作者（相当于 idea 中的注释查看功能）    
+`git bisect` # 一个基于二分查找的方式来定位修改提交点（自行研究使用方法...）    
 
 `git ls-files *Tests.java` # 搜索某个文件在当前工作目录下的完整路径名（在某些情况下需要对某个文件做指定操作时，需要先获取这个文件的完整路径）    
 `git ls-files *.java | wc -l` # 统计某种类型文件数量    
