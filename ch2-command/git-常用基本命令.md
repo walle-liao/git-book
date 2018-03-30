@@ -31,7 +31,7 @@ E: HEAD~1^2~1
 
 
 ### 创建版本库
-`git init`  <span class="grey"># 本地初始化 git 仓库</span>  
+`git init`  <span style="color:grey;"># 本地初始化 git 仓库</span>  
 `git clone <url>`  # 克隆远程版本库  
 
 `git config --list`  # 查看本地所有配置项    
