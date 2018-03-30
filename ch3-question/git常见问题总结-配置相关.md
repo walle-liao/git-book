@@ -21,6 +21,30 @@
 之后再使用`git status`查看可以正常显示中文文件名了
 ![git bash 正常显示中文路径](./images/1002.png)  
 
+------------------
+### GitLab 拉取代码是提示找不到仓库
+公司使用 gitlab 之前使用一直正常，某次修改了配置之后再使用 `git fetch` 代码是提示错误：`fatal: Could not read from remote repository.`
+
+**解决办法：**
+找到相应项目的 .git/config 文件，修改里面对应的 url 配置：  
+`url = http://liaozhicheng:liaozhicheng@git.qfang.com/erp/trade.git`  
+这个 url http:// 后面的分别问用户名:密码，这样在使用 `git fetch` 就不会有问题了
+
+-----------------
+### 使用 github 时提示需要输入用户名和密码
+如题，github 配置中有导入本地电脑的 ssh key 公钥，但是每次提交代码时还是需要输入用户名和密码
+
+解决办法：
+找到相应项目 .git/config 文件，修改对应 url 的配置，让其采用 ssh 协议，而不要采用 https 协议，https 协议需要输入用户名和密码校验
+
+修改之前：  
+`url = https://github.com/qfang-erp/qfang-examples.git`
+
+修改之后：  
+`url = git@github.com:qfang-erp/qfang-examples.git`
+
+PS：要使用 ssh 协议并且不用每次输入用户名和密码，需要先在本地生成对应公钥，并且将公钥添加到 github 配置中。
+
 --------------------
 ### git diff 基于第三方比较工具配置
 通常情况下我们要比较某个文件不同版本之间的差异时，我们可以使用 `git diff` 命令来进行比较，但是如果文件比较大，差异行数比较多时，基于命令窗口的 `git diff` 比较就显得有些无力了，幸好 git 支持我们自定义配置第三方专业的差异比较工具来进行比较。  

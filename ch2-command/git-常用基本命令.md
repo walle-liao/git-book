@@ -31,7 +31,7 @@ E: HEAD~1^2~1
 
 
 ### 创建版本库
-`git init`  <span style="color:grey;"># 本地初始化 git 仓库</span>  
+`git init`  # 本地初始化 git 仓库  
 `git clone <url>`  # 克隆远程版本库  
 
 `git config --list`  # 查看本地所有配置项    
@@ -116,6 +116,8 @@ E: HEAD~1^2~1
 `git show SHA1` # git show 命令几乎可以用来查看 git 中所有的对象    
 `git show master:README.md > README.md.master` # 快速获取 master 分支上 README.md 文件的内容（这个命令非常有用，当你需要查看不同分支/不同提交点/不同tag之间某个文件的内容时，使用该命令可以避免不停的切换分支/tag来获取文件的内容）    
 
+`git config --global alias.lg "log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen%ad (%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --no-merges --date=short"`  # git log 自定义别名，让你的命令瞬间高大尚  
+
 
 ### 差异
 `git diff` # 比较工作目录和索引之间的差异    
@@ -148,6 +150,6 @@ E: HEAD~1^2~1
 
 
 #### 其他
-`git reflog` # *让你永远有后悔药吃* 列出所有 HEAD 变更还原点，当前分支 HEAD 发生变化时（新的提交/撤销提交/切换分支等），git 都会自动记录一个还原点，你可以使用这个还原点来恢复你的错误操作，例如：当你使用 `git reset HADE^` 还原了某个提交点后，你又发现那个被重置的提交点是有用的，你又想恢复回来，这时你就可以使用 reflog 还原点来还原    
+`git reflog`  # *让你永远有后悔药吃* 列出所有 HEAD 变更还原点，当前分支 HEAD 发生变化时（新的提交/撤销提交/切换分支等），git 都会自动记录一个还原点，你可以使用这个还原点来恢复你的错误操作，例如：当你使用 `git reset HADE^` 还原了某个提交点后，你又发现那个被重置的提交点是有用的，你又想恢复回来，这时你就可以使用 reflog 还原点来还原    
 
-`git filter-branch --tree-filter "find * -type f -name '*.log' -delete" master test test2` # *核弹级命令*，在 master&test&test2 分支上删除所有 log 文件，通常情况下如果我们修改了大量文件提交时会使用 `git add .` 命令提交所有的更改，如果不小心包含了一些不必要的 log 文件，这些文件将会提交到版本库中，时间长了之后这些文件可能会散落到不同的分支上，如果你想全局地删掉这些文件 `git filter-branch` 命令就非常有用了，它可以帮你在指定的所有分支上所有的提交中删除指定的文件，而且这些删掉的文件你也无法使用 `git reset` 命令来恢复，并且查看提交历史中也看不到这些文件的记录（慎用！慎用！）    
+`git filter-branch --tree-filter "find * -type f -name '*.log' -delete" master test test2`   # *核弹级命令*，在 master&test&test2 分支上删除所有 log 文件，通常情况下如果我们修改了大量文件提交时会使用 `git add .` 命令提交所有的更改，如果不小心包含了一些不必要的 log 文件，这些文件将会提交到版本库中，时间长了之后这些文件可能会散落到不同的分支上，如果你想全局地删掉这些文件 `git filter-branch` 命令就非常有用了，它可以帮你在指定的所有分支上所有的提交中删除指定的文件，而且这些删掉的文件你也无法使用 `git reset` 命令来恢复，并且查看提交历史中也看不到这些文件的记录（慎用！慎用！）   
